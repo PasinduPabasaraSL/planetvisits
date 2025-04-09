@@ -122,7 +122,7 @@ nav ul li a:hover::after {
     min-height: 600px;
     padding: 80px 20px;
     overflow: hidden;
-    background-image: url('https://www.pixelstalk.net/wp-content/uploads/images6/Travel-Wallpaper-HD-Free-download.jpg');
+    background-image: url('../images/Countries/SL.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -148,14 +148,14 @@ nav ul li a:hover::after {
 .hero-text h2 {
     font-size: 3.5rem;
     margin-bottom: 20px;
-    color: rgb(90, 88, 88);
+    color: rgb(240, 233, 233);
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero-text p {
     font-size: 1.3rem;
     margin: 20px 0 30px;
-    color: rgb(5, 0, 0);
+    color: rgb(221, 213, 221);
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -172,7 +172,7 @@ nav ul li a:hover::after {
 }
 
 .cta-btn:hover {
-    background-color: var(--primary-light);
+    background-color: var(--primary-purple);
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
@@ -263,7 +263,7 @@ nav ul li a:hover::after {
 }
 
 .testimonial-card {
-    background-color: var(--dark-elevated);
+    background-color: rgb(236, 236, 236);
     padding: 30px;
     border-radius: 15px;
     width: 330px;
@@ -290,7 +290,7 @@ nav ul li a:hover::after {
 
 .testimonial-card p {
     font-size: 1.2rem;
-    color: var(--text-secondary);
+    color: rgb(26, 25, 25);
     font-style: italic;
     line-height: 1.6;
     position: relative;
@@ -537,6 +537,3 @@ footer::before {
         font-size: 1.5rem;
     }
 }
-
-/* About Us */
-
