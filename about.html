@@ -1,11 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About Us</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <style>
+        /* About Content Section */
+        .about-content {
+            padding: 80px 0;
+            background-color: var(--dark-bg);
+        }
+
+        /* General Section Styling */
+        .section {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.8rem;
+            color: var(--primary-light);
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Feature Grid Layout */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        /* Feature Card Styling */
+        .feature-card {
+            background-color: var(--dark-elevated);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            color: var(--primary-light);
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            font-size: 1rem;
+            color: var(--text-tertiary);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .section h2 {
+                font-size: 2.2rem;
+            }
+
+            .section p {
+                font-size: 1.1rem;
+            }
+
+            .feature-card h3 {
+                font-size: 1.3rem;
+            }
+
+            .feature-card p {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>About</h1>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <h1>PlanetVisits</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="countries.html">Countries</a></li>
+                    <li><a href="things-to-do.html">Things to Do</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Us Content -->
+    <section class="about-content">
+        <div class="container">
+
+            <div class="section who-we-are">
+                <h2>Who We Are</h2>
+                <p>PlanetVisits is a premier global tourism platform founded in 2018, dedicated to connecting travelers
+                    with the world’s most awe-inspiring destinations. Our team comprises travel enthusiasts, expert
+                    guides, and tech innovators who work together to curate unforgettable experiences. From bustling
+                    cities to serene landscapes, we’re here to help you explore every corner of the planet.</p>
+            </div>
+
+            <div class="section our-mission">
+                <h2>Our Mission</h2>
+                <p>At PlanetVisits, our mission is to simplify travel planning while igniting a sense of wonder in every
+                    journey. We strive to provide comprehensive resources, insider tips, and personalized
+                    recommendations to make travel accessible, enjoyable, and enriching for all. We believe that every
+                    trip is an opportunity to learn, grow, and connect with the world.</p>
+            </div>
+
+            <div class="section our-vision">
+                <h2>Our Vision</h2>
+                <p>We envision a world where travel transcends borders, fosters cultural understanding, and inspires
+                    lifelong memories. By leveraging cutting-edge technology and a deep love for exploration, we aim to
+                    be the go-to platform for adventurers seeking authentic and sustainable travel experiences.</p>
+            </div>
+
+            <div class="section why-choose-us">
+                <h2>Why Choose Us?</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>Expert Curation</h3>
+                        <p>Our team handpicks destinations and activities based on extensive research and firsthand
+                            experience.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Global Reach</h3>
+                        <p>Access travel insights for over 200 countries and thousands of destinations worldwide.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>User-Friendly Design</h3>
+                        <p>Navigate our platform with ease, whether you’re a first-time traveler or a seasoned explorer.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Sustainability Focus</h3>
+                        <p>We promote eco-friendly travel options to preserve the planet for future generations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section our-team">
+                <h2>Our Team</h2>
+                <p>Behind PlanetVisits is a diverse group of professionals united by a passion for travel. Our founders,
+                    seasoned globetrotters themselves, envisioned a platform that bridges the gap between dream
+                    vacations and reality. Supported by a network of local experts, writers, and developers, we bring
+                    you the best of the world, one destination at a time.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section footer-logo">
+                    <h2>PlanetVisits</h2>
+                    <p>Crafting unforgettable journeys for passionate travelers around the globe.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Fb</a>
+                        <a href="#" aria-label="Instagram">Ig</a>
+                        <a href="#" aria-label="Twitter">Tw</a>
+                    </div>
+                </div>
+
+                <div class="footer-section footer-links">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="countries.html">Countries</a></li>
+                        <li><a href="things-to-do.html">Things to Do</a></li>
+                        <li><a href="travel-guides.html">Travel Guides</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section footer-links">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe for travel tips and exclusive offers.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 PlanetVisits. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
