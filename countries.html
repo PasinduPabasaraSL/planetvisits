@@ -1,11 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countries</title>
+    <title>Countries - PlanetVisits</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <style>
+        /* Countries Content Section */
+        .countries-content {
+            padding: 80px 0;
+            background-color: var(--dark-bg);
+        }
+
+        .section {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.8rem;
+            color: var(--primary-light);
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .country-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .country-card {
+            background-color: var(--dark-elevated);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .country-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .country-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .country-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .card-content h3 {
+            font-size: 1.8rem;
+            color: var(--primary-light);
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 1.1rem;
+            color: var(--text-tertiary);
+            margin-bottom: 15px;
+        }
+
+        .learn-more {
+            display: inline-block;
+            font-size: 1rem;
+            color: var(--primary-purple);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .learn-more:hover {
+            color: var(--primary-light);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .section h2 {
+                font-size: 2.2rem;
+            }
+
+            .section p {
+                font-size: 1.1rem;
+            }
+
+            .card-content h3 {
+                font-size: 1.5rem;
+            }
+
+            .card-content p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section h2 {
+                font-size: 1.8rem;
+            }
+
+            .country-card img {
+                height: 180px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Countries</h1>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <h1>PlanetVisits</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="countries.html" class="active">Countries</a></li>
+                    <li><a href="things-to-do.html">Things to Do</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Countries Content -->
+    <section class="countries-content">
+        <div class="container">
+            <div class="section">
+                <h2>Discover Countries</h2>
+                <p>Explore a diverse range of countries, each offering unique cultures, landscapes, and experiences.
+                    Start your journey with PlanetVisits.</p>
+            </div>
+
+            <div class="country-grid">
+                <div class="country-card">
+                    <img src="Assets/images/Countries/SL.jpg" alt="Sri Lanka">
+                    <div class="card-content">
+                        <h3>Sri Lanka</h3>
+                        <p>Known for its tropical landscapes, pristine beaches, ancient temples, and rich cultural
+                            heritage, Sri Lanka is a gem in the Indian Ocean.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <img src="Assets/images/Countries/Japan.jpg" alt="Japan">
+                    <div class="card-content">
+                        <h3>Japan</h3>
+                        <p>A land of ancient temples, modern cities, and serene nature, from Tokyo’s neon lights to
+                            Kyoto’s historic charm.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <img src="Assets/images/Countries/France.jpg" alt="France">
+                    <div class="card-content">
+                        <h3>France</h3>
+                        <p>Famous for its art, cuisine, and romance, with iconic cities like Paris and the picturesque
+                            French Riviera.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <img src="Assets/images/Countries/united-states.jpg" alt="United States">
+                    <div class="card-content">
+                        <h3>United States</h3>
+                        <p>A vast nation of diverse landscapes, from New York’s skyscrapers to the Grand Canyon’s
+                            natural wonders.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <img src="Assets/images/Countries/Greece.jpg" alt="Greece">
+                    <div class="card-content">
+                        <h3>Greece</h3>
+                        <p>Cradle of Western civilization, offering ancient ruins, stunning islands like Santorini, and
+                            Mediterranean vibes.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <img src="Assets/images/Countries/Australia.avif" alt="Australia">
+                    <div class="card-content">
+                        <h3>Australia</h3>
+                        <p>A continent of rugged outback, vibrant cities like Sydney, and unique wildlife like kangaroos
+                            and koalas.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <img src="Assets/images/Countries/South Africa.jpg" alt="South Africa">
+                    <div class="card-content">
+                        <h3>South Africa</h3>
+                        <p>A blend of wildlife safaris, scenic coastlines, and cultural richness, anchored by Cape Town.
+                        </p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Additional Countries -->
+                <div class="country-card">
+                    <img src="Assets/images/Countries/Italy.jpg" alt="Italy">
+                    <div class="card-content">
+                        <h3>Italy</h3>
+                        <p>Known for its rich history, art, and cuisine, from the Colosseum in Rome to the canals of
+                            Venice and the rolling hills of Tuscany.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <img src="Assets/images/Countries/Brazil.jpg" alt="Brazil">
+                    <div class="card-content">
+                        <h3>Brazil</h3>
+                        <p>Famous for its lively festivals, the Amazon Rainforest, and breathtaking beaches along its
+                            vast coastline.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <img src="Assets/images/Countries/Canada.jpg" alt="Canada">
+                    <div class="card-content">
+                        <h3>Canada</h3>
+                        <p>A country known for its pristine nature, including national parks, majestic mountains, and
+                            vibrant multicultural cities like Toronto and Vancouver.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <img src="Assets/images/Countries/India.avif" alt="India">
+                    <div class="card-content">
+                        <h3>India</h3>
+                        <p>A land of rich heritage, stunning architecture, vibrant festivals, and diverse landscapes
+                            from the Himalayas to the beaches of Goa.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <img src="Assets/images/Countries/Egypt.webp" alt="Egypt">
+                    <div class="card-content">
+                        <h3>Egypt</h3>
+                        <p>Home to the ancient pyramids, Nile River cruises, and rich history, making it one of the most
+                            iconic travel destinations.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <img src="Assets/images/Countries/german.jpg" alt="Germany">
+                    <div class="card-content">
+                        <h3>Germany</h3>
+                        <p>A country rich in history, culture, and breathtaking landscapes, from the fairy-tale castles
+                            of Bavaria to the vibrant city life of Berlin.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <img src="Assets/images/Countries/Thailand.webp" alt="Thailand">
+                    <div class="card-content">
+                        <h3>Thailand</h3>
+                        <p>A tropical paradise with vibrant markets, beautiful beaches, Buddhist temples, and a rich
+                            cultural heritage.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="country-card">
+                    <img src="Assets/images/Countries/Singapore.avif" alt="Singapore">
+                    <div class="card-content">
+                        <h3>Singapore</h3>
+                        <p>A futuristic city-state known for its cleanliness, efficient public transport, and iconic
+                            landmarks like Marina Bay Sands and the Gardens by the Bay.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section footer-logo">
+                    <h2>PlanetVisits</h2>
+                    <p>Crafting unforgettable journeys for passionate travelers around the globe.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Fb</a>
+                        <a href="#" aria-label="Instagram">Ig</a>
+                        <a href="#" aria-label="Twitter">Tw</a>
+                    </div>
+                </div>
+
+                <div class="footer-section footer-links">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="countries.html">Countries</a></li>
+                        <li><a href="things-to-do.html">Things to Do</a></li>
+                        <li><a href="travel-guides.html">Travel Guides</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section footer-links">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe for travel tips and exclusive offers.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 PlanetVisits. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Assets/js/script.js"></script>
 </body>
+
 </html>
