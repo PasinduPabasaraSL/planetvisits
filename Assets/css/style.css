@@ -403,6 +403,38 @@ footer {
     color: var(--text-primary);
 }
 
+.social-links a:hover .social-icon {
+    transform: scale(1.1);
+}
+
+.social-links a:nth-child(1):hover {
+    /* Facebook */
+    background-color: #3b5998;
+}
+
+.social-links a:nth-child(2):hover {
+    /* LinkedIn */
+    background-color: #0077b5;
+}
+
+.social-links a:nth-child(3):hover {
+    /* GitHub */
+    background-color: #1b1919;
+}
+
+.social-links a:nth-child(4):hover {
+    /* Twitter */
+    background-color: #000000;
+}
+
+.social-icon {
+    width: 20px;
+    /* Adjust icon size */
+    height: 20px;
+    fill: currentColor;
+    /* Inherits color from parent */
+}
+
 .footer-bottom {
     margin-top: 40px;
     padding-top: 20px;
