@@ -68,6 +68,34 @@
 
         /* Responsive Adjustments */
         @media (max-width: 768px) {
+            .hamburger-icon {
+                display: flex;
+            }
+
+            nav {
+                display: none;
+                width: 100%;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: var(--dark-surface);
+                z-index: 9;
+            }
+
+            nav.active {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                padding: 20px;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
             .section h2 {
                 font-size: 2.2rem;
             }
@@ -102,7 +130,7 @@
                 <h1>PlanetVisits</h1>
             </div>
             <nav>
-                <ul>
+                <ul id="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="destinations.html">Destinations</a></li>
                     <li><a href="countries.html">Countries</a></li>

@@ -200,7 +200,6 @@ nav ul li a:hover::after {
 }
 
 .cta-btn:hover {
-    background-color: var(--primary-light);
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
